@@ -1,0 +1,210 @@
+body {
+  font-size: 16px;
+  font-family: "Delicious Handrawn", cursive;
+  font-family: "DM Serif Display", serif;
+  color: rgb(67, 66, 66);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+img {
+  width: 100%;
+}
+
+.main-cover {
+  width: 100%;
+}
+
+.main-header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+  gap: 1rem;
+}
+
+.main-header div {
+  line-height: 1.5rem;
+}
+
+.main-header span {
+  font-size: 40px;
+}
+
+.photo {
+  width: 70%;
+  border: 5px solid #7c7979fb;
+  border-radius: 50%;
+}
+
+.icon {
+  width: 25px;
+}
+
+.data {
+  display: inline-block;
+}
+
+.about {
+  margin: 0 auto;
+  gap: 1rem; 
+ 
+}
+
+.information {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.training ul,
+.experience p,
+.education ul,
+.skills div,
+.about p {
+  background-color: #f9f5f5fb;
+  font-size: 1.3rem;
+  list-style-type: none;
+}
+
+.projects {
+  background-color: rgb(232, 235, 235);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.text-s {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.text-xl {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+.contact {
+
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+
+}
+
+.form {
+  background-color: #fff;
+  width: 100%;
+  height:400px ;
+  max-width: 500px;
+  margin: 0 auto;
+ 
+  border-radius: 10px;
+  box-shadow: 0 5px 10px -5px rgb(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.form__container {
+  margin-top: 1em;
+  display: grid;
+  gap: 0.5em;
+}
+
+.form__group {
+  position: relative;
+  --color: #5757577e;
+}
+
+.form__input {
+  width: 100%;
+  background-color: none;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #706c6c;
+  padding: 0.6em 0.3em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--color);
+}
+
+/* La etiqueta se traslada a la parte superior izquierda cuando se escribe o se señala en el campo */
+.form__input:not(:placeholder-shown) + .form__label,
+.form__input:focus + .form__label {
+  transform: translateY(-12px) scale(0.7);
+  transform-origin: top left;
+  color: var(--main-color);
+}
+
+.form__label {
+  color: var(--color);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px); /*para animar los inputs*/
+  transition: transform 0.5s, color 0.3s; /*para animar los inputs*/
+}
+.form__submit {
+  background-color: b;
+  color: var(--color);
+  font-family: inherit;
+  font-size: 1 rem;
+  padding: 0.8em 0;
+  border: none;
+  border-radius: 0.5em;
+}
+
+/* La etiqueta se traslada a la parte superior izquierda cuando se escribe o se señala en el campo */
+.form__input:not(:placeholder-shown) ~ .form__line,
+.form__input:focus ~ .form__line {
+  transform: scale(1);
+}
+
+@media (max-width: 768px) {
+  .photo {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  .photo {
+    
+    margin: 0 auto;
+  }
+.projects {
+
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+ 
+}
+
+
+
+.about {
+  
+  margin: 20px auto;
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+.about p, h2{
+  margin: 0;
+}
+
+header p {
+  width: 500px;
+  margin: 0 auto;
+}
+.main-header h2, div{
+  width: 500px;
+  margin: 0 auto;
+  font-size: 1.3rem;
+
+}
+
+}
